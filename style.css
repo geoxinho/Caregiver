@@ -1,0 +1,753 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fff;
+
+  font-family: sans-serif;
+  /* background-color: black; */
+}
+
+:root {
+  --primary: #4d273f;
+  --secondary: #be9a8d;
+  --lgtcolor: #d4c0cd;
+}
+
+.topbar {
+  background-color: var(--primary);
+}
+
+@media only screen and (max-width: 999px) {
+  .topbar {
+    display: none;
+  }
+}
+
+.contentTopbar {
+  background-color: var(--primary);
+  color: #d4c0cd;
+  padding-top: 20px;
+}
+
+.contentTopbar-left a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.contentTopbar-left a:hover {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.contentTopbar-right {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.contentTopbar-right ul li {
+  float: left;
+  justify-items: space-around;
+  text-align: center;
+  padding: 0 12px;
+  border-right: 1px solid var(--lgtcolor);
+}
+
+.contentTopbar-right li:last-child {
+  border: none;
+}
+
+.contentTopbar-right a {
+  color: #d4c0cd;
+  text-decoration: none;
+}
+
+.contentTopbar-right a:hover {
+  color: white;
+  transition: all ease 0.3s;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 70px;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: black;
+}
+
+.dropdown-menu a {
+  background-color: black;
+  color: white;
+  /* padding: 0%; */
+  /* margin: 0%; */
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.dropdown-menu hr {
+  margin: 5px;
+  padding: 1px;
+  color: gray;
+}
+.navbar-nav {
+  justify-items: end;
+  align-items: flex-end;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(/caregiverSlider2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* padding: 40px; */
+}
+
+.hero-text p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  line-height: 70px;
+  text-align: left;
+  font-weight: 700;
+  color: white;
+  font-weight: 800;
+}
+
+.hero-text a {
+  color: white;
+  background-color: var(--secondary);
+  border-radius: 0;
+  border: none;
+}
+
+.hero-text a:hover {
+  color: white;
+  background-color: var(--primary);
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+    height: 80vh;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .care-text p {
+    font-size: 20px;
+    word-wrap: none;
+  }
+}
+
+.jobCategories {
+  border: 1px solid gray;
+  align-items: center;
+  justify-items: center;
+  padding-top: 12px;
+  height: 100px;
+  cursor: pointer;
+}
+.categories-job {
+  background-color: rgba(230, 177, 126, 0.1);
+}
+.jobCategories .categories-icon {
+  font-size: 30px;
+  color: rgb(29, 26, 26);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  padding: 6px;
+  margin: 12px;
+  /* transition: all 0.5s ease; */
+}
+
+.categories-icon:hover {
+  border: none;
+  color: var(--primary);
+}
+
+.jobCategories .categories-text {
+  line-height: 6px;
+}
+
+.categories-text h5 {
+  color: var(--primary);
+}
+
+.categories-job hr {
+  width: 80%;
+}
+
+.features {
+  border: 2px solid var(--secondary);
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.share {
+  display: flex;
+  right: -0;
+  padding-right: 20px;
+  top: 15px;
+  position: absolute;
+}
+
+.senior-col-1 {
+  background-image: url(/caregiverSlider2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  padding: 30px;
+  color: white;
+}
+
+.senior-col-1::after {
+  content: "";
+  background-color: rgba(99, 214, 143, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.senior-col-1 button {
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(7, 7, 55) !important;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  bottom: 40px;
+}
+
+.senior-col-1 button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+.senior-col-1:hover .fadee {
+  transition: all 0.5s ease;
+  transform: translateY(-20px);
+}
+
+.senior-col-1 button:hover {
+  border: none;
+  background-color: #be9a8d !important;
+}
+
+.senior-col-1:hover button {
+  border: none;
+  background-color: var(--primary);
+  opacity: 1;
+  transition: all 0.7s ease;
+  height: 100%;
+  visibility: visible;
+  height: 100%;
+  caption-side: top;
+  transform: translateY(30px);
+}
+.senior-col-2 {
+  background-image: url(/caregiverSlider2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  padding: 30px;
+  color: white;
+}
+
+.senior-col-2::after {
+  content: "";
+  background-color: rgba(166, 24, 26, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.senior-col-2 button {
+  color: white;
+  background-color: rgb(7, 7, 55) !important;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  bottom: 40px;
+}
+
+.senior-col-2 button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+.senior-col-2:hover .fadee {
+  transition: all 0.5s ease;
+  transform: translateY(-20px);
+}
+
+.senior-col-2 button:hover {
+  border: none;
+  background-color: #be9a8d !important;
+}
+
+.senior-col-2:hover button {
+  border: none;
+  background-color: var(--primary);
+  opacity: 1;
+  transition: all 0.7s ease;
+  height: 100%;
+  visibility: visible;
+  height: 100%;
+  caption-side: top;
+  transform: translateY(30px);
+}
+
+.senior-col-3 {
+  background-image: url(/caregiverSlider2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  padding: 30px;
+  color: white;
+}
+
+.senior-col-3::after {
+  content: "";
+  background-color: rgba(40, 35, 179, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.senior-col-3 button {
+  color: white;
+  background-color: rgb(7, 7, 55) !important;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  bottom: 40px;
+}
+
+.senior-col-3:hover .fadee {
+  transition: all 0.5s ease;
+  transform: translateY(-20px);
+}
+
+.senior-col-3 button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+.senior-col-3 button:hover {
+  border: none;
+  background-color: #be9a8d !important;
+}
+
+.senior-col-3:hover button {
+  border: none;
+  background-color: var(--primary);
+  opacity: 1;
+  transition: all 0.9s ease;
+  height: 100%;
+  visibility: visible;
+  height: 100%;
+  caption-side: top;
+  transform: translateY(30px);
+}
+
+.service-col img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.service-col {
+  width: 100%;
+  position: relative;
+}
+
+.service-col::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.service-col:hover::after {
+  content: "";
+  background-color: rgba(78, 39, 64, 0.4);
+  transition: all 0.4s ease;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.service-P hr {
+  margin-left: 20px;
+  opacity: 1;
+  border: 1px solid var(--secondary);
+}
+
+.service-content {
+  padding-top: 16px;
+}
+
+.service-content a,
+.service-content h3 {
+  text-decoration: none;
+  color: rgb(15, 15, 64);
+  font-weight: 500;
+}
+
+.service-content h3:hover {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.service-content p {
+  font-size: 16px;
+}
+
+.video-content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-col {
+  background-color: rgba(77, 39, 63, 0.7);
+  border: 2px solid rgba(128, 0, 128, 0.4);
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.content-col-inside {
+  background-image: url(/service-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  color: white;
+  z-index: 2;
+}
+
+.content-col-inside::after {
+  content: "";
+  background-color: rgba(6, 6, 6, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: -2;
+  position: absolute;
+}
+
+/* .video-color {
+  color: var(--secondary);
+  font: 600;
+  font-size: 25px;
+  font-family: fantasy;
+} */
+
+/* .video-icon span {
+  background-color: #4d273f;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 24px;
+  font-size: 34px;
+  position: relative;
+  top: -280px;
+  left: 250px;
+  justify-content: center;
+  align-items: center;
+} */
+/* .video-ico {
+  content: "";
+  position: absolute;
+} */
+/* .vr {
+  width: 5px;
+  color: rgb(154, 75, 46);
+} */
+
+.serviceCol {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.serviceCol {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(5px);
+  box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+  overflow: hidden;
+}
+
+.serviceCol::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgb(154, 75, 46);
+  box-shadow: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 600ms;
+}
+
+.serviceCol:hover::after {
+  opacity: 1;
+  box-shadow: none;
+  left: 0;
+}
+
+.serviceAllcol {
+  margin: 10px;
+  padding: 30px 10px;
+}
+
+.serviceIcon {
+  font-size: 34px;
+}
+
+.serviceCol:hover,
+.serviceIcon .serviceAllcol {
+  color: white;
+  transition: all 600ms;
+}
+
+.serviceAllcol p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-size: 100%;
+}
+
+.bannerAll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/caregiverSlider1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: white;
+}
+
+.bannerAll::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Red color overlay */
+  color: white;
+  z-index: 1;
+}
+
+.care-banner {
+  width: 100%;
+  height: 70vh;
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  color: white;
+}
+
+.care-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.care-text h1 {
+  position: relative;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.care-text p {
+  position: relative;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 16px;
+  word-wrap: break-word;
+  max-width: 640px;
+  color: white;
+}
+
+.care-text a {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 40px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.banner-btn:hover {
+  background-color: #4d273f;
+  color: #fff;
+  /* transform: scaleX(0.5); */
+  transition: all ease 500ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .care-text h1 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .care-text p {
+    font-size: 20px;
+    word-wrap: none;
+  }
+}
+.footerHeader {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+
+  /* font-weight: bold; */
+}
+
+.footer {
+  background: #ffffff;
+}
+
+.usefulLinks a {
+  display: grid;
+  justify-content: space-between;
+  line-height: 24px;
+  text-decoration: none;
+  color: #4d273f;
+}
+
+.usefulLinks a:hover {
+  color: black;
+}
+
+.RecentBlog-ul a {
+  font-weight: 600;
+  font-size: 24;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+  line-height: 40px;
+  color: #4d273f;
+}
+
+.recentBlog-ul,
+a:hover {
+  color: black;
+}
+.stayconnect {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+}
+.items {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  place-items: center;
+  padding: 20px;
+  display: flex;
+  border: #4d273f solid 3px;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 24px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.items:hover {
+  background-color: #4d273f;
+  color: white;
+  transition: all ease-in 500ms;
+}
