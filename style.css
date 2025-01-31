@@ -1,11 +1,12 @@
+html,
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
   background-color: #fff;
-
   font-family: sans-serif;
+  scroll-behavior: smooth;
   /* background-color: black; */
 }
 
@@ -19,7 +20,7 @@ body {
   background-color: var(--primary);
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 780px) {
   .topbar {
     display: none;
   }
@@ -69,43 +70,28 @@ body {
   color: white;
   transition: all ease 0.3s;
 }
-
+.menu-bar {
+  margin: 0 10px;
+}
 .navbar-brand img {
   width: 150px;
   height: 70px;
 }
 
-.dropdown-menu {
-  border: none;
-  background-color: black;
-}
-
-.dropdown-menu a {
-  background-color: black;
-  color: white;
-  /* padding: 0%; */
-  /* margin: 0%; */
-}
-
-.dropdown-menu a:hover {
-  background-color: var(--secondary);
-  color: white;
-}
-
-.dropdown-menu hr {
-  margin: 5px;
-  padding: 1px;
-  color: gray;
-}
 .navbar-nav {
   justify-items: end;
   align-items: flex-end;
 }
-
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-right: 1rem;
+}
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(/caregiverSlider2.jpg);
+  background: url(images/caregiverSlider2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -215,7 +201,7 @@ body {
 }
 
 .senior-col-1 {
-  background-image: url(/caregiverSlider2.jpg);
+  background-image: url(images/caregiverSlider2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,7 +267,7 @@ body {
   transform: translateY(30px);
 }
 .senior-col-2 {
-  background-image: url(/caregiverSlider2.jpg);
+  background-image: url(images/caregiverSlider2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,7 +334,7 @@ body {
 }
 
 .senior-col-3 {
-  background-image: url(/caregiverSlider2.jpg);
+  background-image: url(images/caregiverSlider2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -489,7 +475,7 @@ body {
 }
 
 .content-col-inside {
-  background-image: url(/service-3.jpg);
+  background-image: url(images/service-3.jpg);
   background-position: center;
   background-size: cover;
   background-position: cover;
@@ -511,35 +497,6 @@ body {
   z-index: -2;
   position: absolute;
 }
-
-/* .video-color {
-  color: var(--secondary);
-  font: 600;
-  font-size: 25px;
-  font-family: fantasy;
-} */
-
-/* .video-icon span {
-  background-color: #4d273f;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 24px;
-  font-size: 34px;
-  position: relative;
-  top: -280px;
-  left: 250px;
-  justify-content: center;
-  align-items: center;
-} */
-/* .video-ico {
-  content: "";
-  position: absolute;
-} */
-/* .vr {
-  width: 5px;
-  color: rgb(154, 75, 46);
-} */
 
 .serviceCol {
   position: relative;
@@ -603,7 +560,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(/caregiverSlider1.jpg);
+  background-image: url(images/caregiverSlider1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
